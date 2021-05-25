@@ -2,7 +2,7 @@
     "name": "the-world-wide-weems",
     "version": "1.0.0",
     "description": "The Weems family travel guide",
-    "main": "index.html",
+    "main": "views/index.html",
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
