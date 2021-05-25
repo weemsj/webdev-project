@@ -8,22 +8,22 @@ app.use(bodyParser.json());
 
 app.set('port', 4372);
 
-app.get('/',function(req,res){
-    res.send('index.html');
+app.get('/home',function(req,res){
+    res.send('index');
 });
 
 app.get('/about',function(req,res){
-    res.send('about.html');
+    res.send('about');
 });
 
 app.get('/connect',function(req,res) {
-    res.send('connect.html');
+    res.send('connect');
 });
 
 app.post('/connect',function(req,res) {
     req.body.name()
     req.body.email()
-    res.send("thankyou.html")
+    res.send("thankyou")
 });
 
 
@@ -31,11 +31,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 app.get('/gallery',function(req,res) {
-    res.send('gallery.html');
+    res.send('gallery');
 });
 
 app.get('/thankyou',function(req,res) {
-    res.send('thankyou.html');
+    res.send('thankyou');
 });
 
 app.use(function(req,res){
