@@ -1,6 +1,6 @@
-let index = require('index');
+let express = require('express');
 
-let app = index();
+let app = express();
 let bodyParser = require('body-parser');
 
 app.use(bodyParser.urlencoded({ extended: false }));
