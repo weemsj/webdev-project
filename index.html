@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" content="width=devide-width, initial-scale=1">
+    <title>homepage</title>
+    <link rel="stylesheet" href="https://use.typekit.net/oyd2cya.css">
+    <link href="styles/stylesheet.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/155a0126f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <figure><img src="images/logo.svg"></figure>
+    <nav id="nav">
+        <ul>
+            <li class="navigation-link current"><a style="color: #e7e3d8" href="index.html">Home</a></li>
+            <li class="navigation-link"><a href="about.html">Meet the Weems</a></li>
+            <li class="navigation-link"><a href="connect.html"> Connect with the Weems</a></li>
+            <li class="navigation-link"><a href="gallery.html"> Gallery</a></li>
+        </ul>
+    </nav>
+    </div>
+    <div id="content">
+        <!-- slide show code from w3schools.com/howto/how_to_js_slideshow.asp -->
+        <!-- slide show container is a class that wraps the slide show, I can use th class to adjust the padding width
+        and other attributes that scale the slide show to the page. -->
+        <div class="slideshow-container" >
+            <!-- Full-width images with numbers and caption text -->
+            <div class="slideshow fade">
+                <div class="numbertext">1/7</div>
+                <img src="images/familycolosseum.jpg" style="width: 100%">
+                <div class="text">Colosseum Rome, Italy</div>
+            </div>
+
+            <div class="slideshow fade">
+                <div class="numbertext">2/7</div>
+                <img src="images/cap-d'ail.png" style="width: 100%">
+                <div class="text">Cap-d'Ail, France</div>
+            </div>
+
+            <div class="slideshow fade">
+                <div class="numbertext">3/7</div>
+                <img src="images/london-metro.jpg" style="width: 100%">
+                <div class="text">London Underground</div>
+            </div>
+
+            <div class="slideshow fade">
+                <div class="numbertext">4/7</div>
+                <img src="images/nbafinals.jpg" style="width: 100%">
+                <div class="text">Lebron's last game as a CAV NBA Finals Cleveland, Ohio</div>
+            </div>
+
+            <div class="slideshow fade">
+                <div class="numbertext">5/7</div>
+                <img src="images/pier39.jpg" style="width: 100%">
+                <div class="text">Pier 39 San Francisco, CA</div>
+            </div>
+
+            <div class="slideshow fade">
+                <div class="numbertext">6/7</div>
+                <img src="images/napavalley.jpg" style="width: 100%">
+                <div class="text">Castello di Amorosa Napa Valley, CA</div>
+            </div>
+
+            <div class="slideshow fade">
+                <div class="numbertext">7/7</div>
+                <img src="images/trevifountain.jpg" style="width: 100%">
+                <div class="text">Trevi Fountain Rome, Italy</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="nextSlides(-1)">&#10094;</a>
+            <a class="next" onclick="nextSlides(1)">&#10095;</a>
+            </div>
+        <br />
+
+
+            <!-- dots -->
+           <div style="text-align: center">
+               <span class="dot" onclick="currentSlide(1)"></span>
+               <span class="dot" onclick="currentSlide(2)"></span>
+               <span class="dot" onclick="currentSlide(3)"></span>
+               <span class="dot" onclick="currentSlide(4)"></span>
+               <span class="dot" onclick="currentSlide(5)"></span>
+               <span class="dot" onclick="currentSlide(6)"></span>
+               <span class="dot" onclick="currentSlide(7)"></span>
+           </div>
+        </div>
+    <div id="footer">
+        <span class="footer-link" id="copy-right">&copy;Copyright 2030</span>
+        <span class="footer-link" id="contact-us"><a target="_blank" href="connect.html">contact us</a></span>
+        <span target="_blank" href="https://www.instagram.com/theworldwideweems/">
+            <i class="fab fa-instagram"></i>
+        </span>
+    </div>
+    <script src="scripts/slideshow.js"></script>
+</body>
+</html>
